@@ -7,5 +7,7 @@ echoclient: client.cpp
 	$(CXX) -o $@ $^ $(LDFLAGS) -lpthread
 
 install:
-	cp echoserver echoclient $(bindir)
+	install -d $(bindir)
+	install -m 0755 echoserver  $(bindir)
+	install -m 0755 echoclient  $(bindir)
 
