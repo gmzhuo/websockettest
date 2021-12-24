@@ -7,7 +7,6 @@ echoclient: client.cpp
 	$(CXX) -o $@ $^ $(LDFLAGS) -lpthread
 
 install:
-	printenv
 	install -d $(DESTDIR)$(bindir)
 	install -m 0755 echoserver  $(DESTDIR)$(bindir)
 	install -m 0755 echoclient  $(DESTDIR)$(bindir)
