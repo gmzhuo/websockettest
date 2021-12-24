@@ -8,7 +8,7 @@ echoclient: client.cpp
 
 install:
 	printenv
-	install -d $(bindir)
-	install -m 0755 echoserver  $(bindir)
-	install -m 0755 echoclient  $(bindir)
+	install -d $(DESTDIR)$(bindir)
+	install -m 0755 echoserver  $(DESTDIR)$(bindir)
+	install -m 0755 echoclient  $(DESTDIR)$(bindir)
 
