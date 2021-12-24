@@ -6,4 +6,6 @@ echoserver: server.cpp
 echoclient: client.cpp
 	$(CXX) -o $@ $^ $(LDFLAGS) -lpthread
 
+install:
+	cp echoserver echoclient $(bindir)
 
